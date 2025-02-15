@@ -9,8 +9,8 @@ if [ -n "$(uname -m | grep armv7l)" ]; then
 
 elif [ -n "$(uname -m | grep aarch64)" ]; then
     _arch=arm64
-    feed1="deb [arch=$_arch] https://oscam-installer.github.io/aarch64 focal main"
-	feed2="deb [arch=$_arch] https://oscam-installer.github.io/main focal main"
+    feed1="deb [arch=$_arch] https://oscam-installer.github.io/aarch64 ./"
+	feed2="deb [arch=$_arch] https://oscam-installer.github.io/main ./"
     echo $feed1 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
 	echo $feed2 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
 
