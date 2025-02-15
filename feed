@@ -2,8 +2,8 @@
 
 if [ -n "$(uname -m | grep armv7l)" ]; then
     _arch=arm
-    feed1="src/gz oscam-installer-cam https://oscam-installer.github.io/arm/Packages.gz"
-	feed2="src/gz oscam-installer-main https://oscam-installer.github.io/main/Packages.gz"
+    feed1="src/gz oscam-installer-cam https://oscam-installer.github.io/arm/"
+	feed2="src/gz oscam-installer-main https://oscam-installer.github.io/main/"
     echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 	echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 
@@ -16,8 +16,8 @@ elif [ -n "$(uname -m | grep aarch64)" ]; then
 
 elif [ -n "$(uname -m | grep mips)" ]; then
     _arch=mips
-    feed1="src/gz oscam-installer-cam https://oscam-installer.github.io/mipsel/Packages.gz"
-	feed2="src/gz oscam-installer-main https://oscam-installer.github.io/main/Packages.gz"
+    feed1="src/gz oscam-installer-cam https://oscam-installer.github.io/mipsel/"
+	feed2="src/gz oscam-installer-main https://oscam-installer.github.io/main/"
     echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
     echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 
