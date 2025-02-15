@@ -4,22 +4,22 @@ if [ -n "$(uname -m | grep armv7l)" ]; then
     _arch=arm
     feed1="src/gz oscam-installer-cam https://raw.githubusercontent.com/oscam-installer/enigma2-feed/main/arm/Packages.gz"
 	feed2="src/gz oscam-installer-main https://raw.githubusercontent.com/oscam-installer/enigma2-feed/main/main/Packages.gz"
-    echo $feed1 | sudo tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
-	echo $feed2 | sudo tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
+    echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
+	echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 
 elif [ -n "$(uname -m | grep aarch64)" ]; then
     _arch=arm64
     feed1="deb [arch=$_arch] https://raw.githubusercontent.com/oscam-installer/enigma2-feed/main/aarch64 focal main"
 	feed2="deb [arch=$_arch] https://raw.githubusercontent.com/oscam-installer/enigma2-feed/main/main focal main"
-    echo $feed1 | sudo tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
-	echo $feed2 | sudo tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
+    echo $feed1 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
+	echo $feed2 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
 
 elif [ -n "$(uname -m | grep mips)" ]; then
     _arch=mips
     feed1="src/gz oscam-installer-cam https://raw.githubusercontent.com/oscam-installer/enigma2-feed/main/mipsel/Packages.gz"
 	feed2="src/gz oscam-installer-main https://raw.githubusercontent.com/oscam-installer/enigma2-feed/main/main/Packages.gz"
-    echo $feed1 | sudo tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
-    echo $feed2 | sudo tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
+    echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
+    echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 
 else
     echo -e "\e[31m Sorry, your device does not have the proper Emu \e[0m"
