@@ -9,6 +9,7 @@ elif [ -n "$(uname -m | grep aarch64)" ]; then
     feed1="deb [trusted=yes] http://feed.tv-lounge.eu/aarch64 ./"
     echo $feed1 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
 	echo '{ "entrys": [ {"name":"Oscam-Installer Packages", "hide":0, "sort":1, "desc":"Oscam-Installer Packages", "filter":"oscam-installer"} ] }' | tee /etc/enigma2/AddonFilterlist_oscam-installer.json > /dev/null
+	apt install -y coreutils > /dev/null
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AEEC34D2E6D9BF07 > /dev/null
 elif [ -n "$(uname -m | grep mips)" ]; then
     _arch=mips
@@ -25,6 +26,7 @@ if [ -e /etc/opkg ]; then
 elif [ -e /etc/apt/sources.list.d ]; then
     feed2="deb [trusted=yes] http://feed.tv-lounge.eu/main-deb ./"
 	echo $feed2 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
+	apt install -y coreutils > /dev/null
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AEEC34D2E6D9BF07 > /dev/null
 else
     echo "neither opkg nor apt was found ... bailing out"
