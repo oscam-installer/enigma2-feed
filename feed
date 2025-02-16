@@ -22,7 +22,7 @@ if [ -e /etc/opkg ]; then
     feed2="src/gz oscam-installer-main http://feed.tv-lounge.eu/main-ipk"
 	echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 elif [ -e /etc/apt/sources.list.d ]; then
-    feed2="deb [arch=$_arch] https://feed.tv-lounge.eu/main-deb ./"
+    feed2="deb [trusted=yes] http://feed.tv-lounge.eu/main-deb ./"
 	echo $feed2 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
 else
     echo "neither opkg nor apt was found ... bailing out"

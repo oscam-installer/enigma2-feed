@@ -2,6 +2,6 @@ Archive: stable
 Component: main
 Origin: OSCam-Installer <oscam-installer@proton.me>
 Label: OSCam-Installer
-Architecture: amd64
+Architecture: arm64
 Version: 1.0
 Codename: focal
