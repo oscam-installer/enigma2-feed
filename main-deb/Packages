@@ -1,4 +1,4 @@
-Package: oscam-installer-picons-icam-picons
+Package: enigma2-plugin-extensions-oscam-installer-picons-icam-picons
 Architecture: all
 Version: 20250207
 Priority: optional
@@ -7,15 +7,15 @@ Source: https://i.tv-lounge.eu
 Maintainer: OSCam-Installer <oscam-installer@proton.me>
 Depends:
 Filename: ./enigma2-plugin-extensions-oscam-installer-picons-icam-astra.deb
-Size: 972
-MD5sum: 91b44eadec796a03f3b6d641203cd65a
-SHA1: f3a1dd41a52dd95987db7fe2e014761b1e13c908
-SHA256: 78a885c119026a0e68661eabfea4d918135b92fccc14616d077eb8ddefb22bcb
-SHA512: 55941e25c97937b5e40c7801e374729c94eb1744bcba0f3fa9999f7b54d727dc89050d8a7d033470cc225b58fe3b2bfc391ca8e88a7b49e4e4dc635af30193ee
+Size: 992
+MD5sum: f485c7d30ac2f05a27d77305ad67f2a4
+SHA1: caf983f15b3bdf4c7d9083e42ae6d5d63cb82eb3
+SHA256: 4d84c6d8ba19036c48de184aa191c87abc167707e96d43d4519306115bd860d5
+SHA512: 0b1427a76eed15800eb5e559ade2393eeca2e7482909544bdc6408180b18d214f9538852a14fc1725139dd06b5f90ecbd700852ce6301567b2cb33b65945c277
 Homepage: https://i.tv-lounge.eu
 Description: picons-icam version-20250207
 
-Package: oscam-installer-settings-icam-astra-multi
+Package: enigma2-plugin-extensions-oscam-installer-settings-icam-astra-multi
 Architecture: all
 Version: 20250207
 Priority: optional
@@ -24,15 +24,15 @@ Source: https://i.tv-lounge.eu
 Maintainer: OSCam-Installer <oscam-installer@proton.me>
 Depends:
 Filename: ./enigma2-plugin-extensions-oscam-installer-settings-icam-astra-multi.deb
-Size: 2840
-MD5sum: 713040ba6766fc3c53cdf978c68fd5e7
-SHA1: b63b83913868d3e1888eade716f6187c1ab5b42b
-SHA256: 0fb1631c9e2a804a003f596217ff625bb6aeef32d1e3ea64e9e7d4919da93d62
-SHA512: 9ee58169bfd7a4f0bf728b132bbf3980f0a703563cb0a53b5c3d570ffae909b708cf9882b937680e997ac9a9f929bd0e45c1ee8e941a4d0361bf8f227138a8be
+Size: 2856
+MD5sum: 786fd0c840f57e16dba6fc83cc29521a
+SHA1: 75fed12c575ed338a070f3f209f83dcb51d01a5c
+SHA256: b6daf923e7dc5af6f5264c277a928e9193a7ad207090e07ea40d3ca4f5a495bf
+SHA512: bf7b0da4aeb93842bc2afb23ecd0f2f316b3af26775d72abf3f17199d69ab6e9b440fe9177995e07d9b227336132a7bf630e04c1ffd2f700e74d26976664d010
 Homepage: https://i.tv-lounge.eu
 Description: settings icam astra multi
 
-Package: oscam-installer-settings-icam-astra-single
+Package: enigma2-plugin-extensions-oscam-installer-settings-icam-astra-single
 Architecture: all
 Version: 20250207
 Priority: optional
@@ -41,62 +41,11 @@ Source: https://i.tv-lounge.eu
 Maintainer: OSCam-Installer <oscam-installer@proton.me>
 Depends:
 Filename: ./enigma2-plugin-extensions-oscam-installer-settings-icam-astra-single.deb
-Size: 2488
-MD5sum: ed030e758a6b4dd6665874479cad4f4f
-SHA1: 3471dd3dc7c08593f935ba16e98d41155cb3ad8c
-SHA256: 6f4084449a9af13068e9fbba30f2b45e5824020edd5d86bd65592aa25bf91959
-SHA512: 2f5c2177a2c40c2ca94447edbd3f14eb3534039d84752920d320109ea2257e1e6efbc09cf50af4d65c218a8ff93d859c032e18c9b1d9206de0f1442526b280eb
-Homepage: https://i.tv-lounge.eu
-Description: settings icam astra single
-
-Package: oscam-installer-picons-icam-picons
-Architecture: all
-Version: 20250207
-Priority: optional
-Section: base
-Source: https://i.tv-lounge.eu
-Maintainer: OSCam-Installer <oscam-installer@proton.me>
-Depends:
-Filename: ./oscam-installer-picons-icam-astra.deb
-Size: 972
-MD5sum: 91b44eadec796a03f3b6d641203cd65a
-SHA1: f3a1dd41a52dd95987db7fe2e014761b1e13c908
-SHA256: 78a885c119026a0e68661eabfea4d918135b92fccc14616d077eb8ddefb22bcb
-SHA512: 55941e25c97937b5e40c7801e374729c94eb1744bcba0f3fa9999f7b54d727dc89050d8a7d033470cc225b58fe3b2bfc391ca8e88a7b49e4e4dc635af30193ee
-Homepage: https://i.tv-lounge.eu
-Description: picons-icam version-20250207
-
-Package: oscam-installer-settings-icam-astra-multi
-Architecture: all
-Version: 20250207
-Priority: optional
-Section: base
-Source: https://i.tv-lounge.eu
-Maintainer: OSCam-Installer <oscam-installer@proton.me>
-Depends:
-Filename: ./oscam-installer-settings-icam-astra-multi.deb
-Size: 2840
-MD5sum: 713040ba6766fc3c53cdf978c68fd5e7
-SHA1: b63b83913868d3e1888eade716f6187c1ab5b42b
-SHA256: 0fb1631c9e2a804a003f596217ff625bb6aeef32d1e3ea64e9e7d4919da93d62
-SHA512: 9ee58169bfd7a4f0bf728b132bbf3980f0a703563cb0a53b5c3d570ffae909b708cf9882b937680e997ac9a9f929bd0e45c1ee8e941a4d0361bf8f227138a8be
-Homepage: https://i.tv-lounge.eu
-Description: settings icam astra multi
-
-Package: oscam-installer-settings-icam-astra-single
-Architecture: all
-Version: 20250207
-Priority: optional
-Section: base
-Source: https://i.tv-lounge.eu
-Maintainer: OSCam-Installer <oscam-installer@proton.me>
-Depends:
-Filename: ./oscam-installer-settings-icam-astra-single.deb
-Size: 2488
-MD5sum: ed030e758a6b4dd6665874479cad4f4f
-SHA1: 3471dd3dc7c08593f935ba16e98d41155cb3ad8c
-SHA256: 6f4084449a9af13068e9fbba30f2b45e5824020edd5d86bd65592aa25bf91959
-SHA512: 2f5c2177a2c40c2ca94447edbd3f14eb3534039d84752920d320109ea2257e1e6efbc09cf50af4d65c218a8ff93d859c032e18c9b1d9206de0f1442526b280eb
+Size: 2504
+MD5sum: f1e6205cb37c33a0dc65faba01a77e69
+SHA1: 0f45dce0c2f072ae4e542c19c31343cfdc93466a
+SHA256: 98295824a9a15a83cdd6ee108f920c7aed3c52741e3fec247818f2d33cbdaada
+SHA512: d641898050d157785c868fb6c142717efc2e08d04d12283ce7785fa472577e483bd573725b1911cc8059769986094be1898dad46855334d24446302d07a35fe8
 Homepage: https://i.tv-lounge.eu
 Description: settings icam astra single
 
