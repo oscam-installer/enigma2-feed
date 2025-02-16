@@ -3,27 +3,29 @@
 if [ -n "$(uname -m | grep armv7l)" ]; then
     _arch=arm
     feed1="src/gz oscam-installer-cam https://oscam-installer.github.io/arm"
-	feed2="src/gz oscam-installer-main https://oscam-installer.github.io/main"
-    echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
-	echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
-
+	echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 elif [ -n "$(uname -m | grep aarch64)" ]; then
     _arch=arm64
     feed1="deb [arch=$_arch] https://oscam-installer.github.io/aarch64 ./"
-	feed2="deb [arch=$_arch] https://oscam-installer.github.io/main ./"
     echo $feed1 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
-	echo $feed2 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
-	echo '{ "entrys": [ {"name":"Oscam-Installer OSCam", "hide":0, "sort":1, "desc":"Oscam-Installer Packages", "filter":"enigma2-plugin-softcams-oscam-installer"} ] }' | sudo tee /etc/enigma2/AddonFilterlist_oscam-installer.json > /dev/null
-
+	echo '{ "entrys": [ {"name":"Oscam-Installer OSCam", "hide":0, "sort":1, "desc":"Oscam-Installer Packages", "filter":"oscam-installer"} ] }' | sudo tee /etc/enigma2/AddonFilterlist_oscam-installer.json > /dev/null
 elif [ -n "$(uname -m | grep mips)" ]; then
     _arch=mips
     feed1="src/gz oscam-installer-cam https://oscam-installer.github.io/mipsel"
-	feed2="src/gz oscam-installer-main https://oscam-installer.github.io/main"
-    echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
-    echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
-
+	echo $feed1 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
 else
     echo -e "\e[31m Sorry, your device does not have the proper Emu \e[0m"
+    exit 1
+fi
+
+if [ -e /etc/opkg ]; then
+    feed2="src/gz oscam-installer-main https://oscam-installer.github.io/main-ipk"
+	echo $feed2 | tee -a /etc/opkg/3rd-party-feed.conf > /dev/null
+elif [ -e /etc/apt/sources.list.d ]; then
+    feed2="deb [arch=$_arch] https://oscam-installer.github.io/main-deb ./"
+	echo $feed2 | tee -a /etc/apt/sources.list.d/oscam-installer.list > /dev/null
+else
+    echo "neither opkg nor apt was found ... bailing out"
     exit 1
 fi
 
