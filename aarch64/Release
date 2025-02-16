@@ -1,7 +1,13 @@
-Archive: stable
-Component: main
-Origin: OSCam-Installer <oscam-installer@proton.me>
-Label: OSCam-Installer
-Architecture: arm64
-Version: 1.0
-
+Date: Sun, 16 Feb 2025 14:31:59 +0000
+MD5Sum:
+ 75c2264a6c3afd1e9053b9f194b0e7ba              693 Packages.gz
+ bf6a2addcfa267b9d0cdc578a6621a8c               38 Release
+SHA1:
+ 9adee0fb110a2a5e0e831510765673c9d85146d9              693 Packages.gz
+ cce7dd0afbe036dbc9e32fa1082c3954617211d5               38 Release
+SHA256:
+ 1f80235d59d0a5e71b2d5b4b7d55dc2711c1f66ff0be6375ad729ba49ff28c4a              693 Packages.gz
+ 616058c9a310d2ab735b644aaae43db8d709be3be4653d6ae97f167d0f59e8c5               38 Release
+SHA512:
+ 5a89ee0227f926a064b73a8acf9e50c028ff816c47b3a8140705de6984694054e6b77316edf5bbe03b55ae2a1580f8ee287183737c33e8384c373b1837666f66              693 Packages.gz
+ e3c830d46c5dd3491be90d33ac29aaf6890ac02a1d3de6309db86a179586747c58bab35e1b88bf28bb2d0e1500e3e26424d859bb5de3c4ed5359b9fe2a05b637               38 Release
